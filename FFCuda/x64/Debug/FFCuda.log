@@ -1,7 +1,13 @@
 ﻿  Compiling CUDA source file kernel.cu...
   
   C:\Users\Hp Probook 440 G5\source\repos\FFCuda\FFCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Hp Probook 440 G5\source\repos\FFCuda\FFCuda\kernel.cu" 
-C:/Users/Hp Probook 440 G5/source/repos/FFCuda/FFCuda/kernel.cu(31): warning : variable "shr_img" was declared but never referenced
+C:/Users/Hp Probook 440 G5/source/repos/FFCuda/FFCuda/kernel.cu(329): warning : variable "d_img" was declared but never referenced
+  
+C:/Users/Hp Probook 440 G5/source/repos/FFCuda/FFCuda/kernel.cu(330): warning : variable "d_img2" was declared but never referenced
   
   kernel.cu
+C:/Users/Hp Probook 440 G5/source/repos/FFCuda/FFCuda/kernel.cu(67): warning C4244: '=': conversion from 'float' to 'short', possible loss of data
+C:/Users/Hp Probook 440 G5/source/repos/FFCuda/FFCuda/kernel.cu(71): warning C4244: '=': conversion from 'short' to 'unsigned char', possible loss of data
+C:/Users/Hp Probook 440 G5/source/repos/FFCuda/FFCuda/kernel.cu(329): warning C4101: 'd_img': unreferenced local variable
+C:/Users/Hp Probook 440 G5/source/repos/FFCuda/FFCuda/kernel.cu(330): warning C4101: 'd_img2': unreferenced local variable
   FFCuda.vcxproj -> C:\Users\Hp Probook 440 G5\source\repos\FFCuda\x64\Debug\FFCuda.exe
